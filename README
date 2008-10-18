@@ -1,14 +1,9 @@
-Rinari Is Not A Ruby IDE.
+Minami Is Not A Merb IDE.
 
-Well, ok it kind of is. Rinari is an Emacs minor mode that is aimed
-towards making Emacs into a top-notch Ruby and Rails development
-environment.
+Well, ok it kind of is. Minami is an Emacs minor mode that is aimed
+towards making Emacs into a top-notch Merb development environment.
 
 For the latest version see
-http://github.com/eschulte/rinari/tree/master
+http://github.com/eschulte/rinari/tree/merb
 
-For instillation instruction and documentation see
-http://rinari.rubyforge.org
-
-For discussion of Ruby on Rails related Emacs development see
-http://groups.google.com/group/emacs-on-rails
+see the TODO file for more information...
