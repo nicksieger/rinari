@@ -179,10 +179,10 @@ compilation buffer."
   ruby-compilation-minor-mode-map)
 
 ;; So we can invoke it easily.
-(eval-after-load 'ruby-mode
-  '(progn
-     (define-key ruby-mode-map (kbd "C-x t") 'ruby-compilation-this-buffer)
-     (define-key ruby-mode-map (kbd "C-x C-t") 'ruby-compilation-this-test)))
+;; (eval-after-load 'ruby-mode
+;;   '(progn
+;;      (define-key ruby-mode-map (kbd "C-x t") 'ruby-compilation-this-buffer)
+;;      (define-key ruby-mode-map (kbd "C-x C-t") 'ruby-compilation-this-test)))
 
 (provide 'ruby-compilation)
 ;;; ruby-compilation.el ends here

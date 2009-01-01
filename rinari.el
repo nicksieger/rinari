@@ -531,11 +531,12 @@ renders and redirects to find the final controller or view."
 otherwise turn `rinari-minor-mode' off if it is on."
   (interactive)
   (let* ((root (rinari-root)) (r-tags-path (concat root rinari-tags-file-name)))
-    (if root (progn
-	       (set (make-local-variable 'tags-file-name)
-		    (and (file-exists-p r-tags-path) r-tags-path))
-	       (run-hooks 'rinari-minor-mode-hook)
-	       (rinari-minor-mode t))
+    (if root
+	(progn
+	  ;; Don't stomp on an already-loaded tags table
+	  (if (file-exists-p r-tags-path) (visit-tags-table r-tags-path t))
+	  (run-hooks 'rinari-minor-mode-hook)
+	  (rinari-minor-mode t))
       (if rinari-minor-mode (rinari-minor-mode)))))
 
 (defvar rinari-major-modes
