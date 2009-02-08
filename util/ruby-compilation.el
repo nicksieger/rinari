@@ -1,6 +1,6 @@
 ;;; ruby-compilation.el --- run a ruby process in a compilation buffer
 
-;; Copyright (C) 2008 Eric Schulte
+;; Copyright (C) 2008, 2009 Eric Schulte
 
 ;; Author: Eric Schulte
 ;; URL: http://www.emacswiki.org/cgi-bin/emacs/ruby-compilation.el
